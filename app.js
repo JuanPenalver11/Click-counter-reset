@@ -1,7 +1,8 @@
 // variables 
 
-const btnCount = document.querySelector('.btnCount');
+const btnAdd = document.querySelector('.btnAdd');
 const btnReset = document.querySelector('.btnReset');
+const btnSubs = document.querySelector('.btnSubs')
 const displayNumber = document.querySelector('.displayNumber');
 
 
@@ -11,7 +12,7 @@ function counter() {
 
     let count = 0;
 
-    btnCount.addEventListener('click', function () {
+    btnAdd.addEventListener('click', function () {
         count++
         displayNumber.innerHTML = count;
     });
@@ -20,6 +21,11 @@ function counter() {
         count = 0;
         displayNumber.innerHTML = count;
     });
+
+    btnSubs.addEventListener('click', function(){
+        count--
+        displayNumber.innerHTML = count; 
+    })
 
 }
 

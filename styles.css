@@ -34,7 +34,7 @@ h2{
     gap: 10px;
 }
 
-.btnCount, .btnReset{
+.btnAdd, .btnReset, .btnSubs{
     font-size: 1.2rem;
     box-shadow: 0 0 3px;
     border-radius: 10px;
@@ -45,7 +45,7 @@ h2{
     color:#fff
 }
 
-.btnCount:hover, .btnReset:hover{
+.btnAdd:hover, .btnReset:hover, .btnSubs:hover{
     background-color: #fff;
     border: solid green 1px;
     color:green;
