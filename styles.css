@@ -27,7 +27,7 @@ h2{
     
 }
 
-.buttons{
+.button-container{
     margin-top: 40px;
     display: flex;
     justify-content: center;

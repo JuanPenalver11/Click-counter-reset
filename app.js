@@ -1,35 +1,24 @@
-// variables 
-
-const btnAdd = document.querySelector('.btnAdd');
-const btnReset = document.querySelector('.btnReset');
-const btnSubs = document.querySelector('.btnSubs')
+const buttonContainer = document.querySelector('.button-container');
 const displayNumber = document.querySelector('.displayNumber');
 
+let count = 0;
 
-// Function to count and reset 
+buttonContainer.addEventListener('click', function (e) {
+    const target = e.target;
 
-function counter() {
-
-    let count = 0;
-
-    btnAdd.addEventListener('click', function () {
-        count++
-        displayNumber.innerHTML = count;
-    });
-
-    btnReset.addEventListener('click', function () {
+    if (target.classList.contains('btnAdd')) {
+        count++;
+    } else if (target.classList.contains('btnReset')) {
         count = 0;
-        displayNumber.innerHTML = count;
-    });
+    } else if (target.classList.contains('btnSubs')) {
+        count--;
+    }
 
-    btnSubs.addEventListener('click', function(){
-        count--
-        displayNumber.innerHTML = count; 
-    })
+    displayNumber.innerHTML = count;
+});
 
-}
 
-counter()
+
 
 
 
